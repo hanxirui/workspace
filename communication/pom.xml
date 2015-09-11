@@ -13,6 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jetty.version>9.2.10.v20150310</jetty.version>
 		<spring.version>4.2.1.RELEASE</spring.version>
+		<netty.version>4.0.19.Final</netty.version>
 	</properties>
 
 	<dependencies>
@@ -63,6 +64,12 @@
 			<artifactId>jetty-servlets</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+		
+		<dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
 	</dependencies>
 
 	<build>
